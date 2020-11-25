@@ -1,0 +1,23 @@
+{
+  "groups": [
+    {
+      "name": "security",
+      "type": "com.qiyulong.entity.SecurityPropertities",
+      "sourceType": "com.qiyulong.entity.SecurityPropertities"
+    }
+  ],
+  "properties": [
+    {
+      "name": "security.login-page",
+      "type": "java.lang.String",
+      "sourceType": "com.qiyulong.entity.SecurityPropertities",
+      "defaultValue": "\/login.html"
+    },
+    {
+      "name": "security.login-type",
+      "type": "com.qiyulong.config.LoginType",
+      "sourceType": "com.qiyulong.entity.SecurityPropertities"
+    }
+  ],
+  "hints": []
+}
