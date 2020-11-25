@@ -8,7 +8,7 @@
         select * from user where username=#{username}
     </select>
 
-    <select id="getUserRolesById" resultType="user">
+    <select id="getUserRolesById" resultType="role">
         select * from role where id in (select rid from user_role where uid=#{id})
     </select>
 </mapper>

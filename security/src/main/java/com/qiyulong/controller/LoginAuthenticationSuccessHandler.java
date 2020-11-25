@@ -26,7 +26,7 @@ public class LoginAuthenticationSuccessHandler extends SavedRequestAwareAuthenti
     @Override
     public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException, ServletException {
         log.info("登录成功!!!");
-        if (LoginType.JSON.equals(securityPropertities.getLoginType())){
+        if (LoginType.REDIRECT.equals(securityPropertities.getLoginType())){
             response.setContentType("application/json;charset=UTF-8");
             response.getWriter().write(JSON.toJSONString(authentication));
         }else{
